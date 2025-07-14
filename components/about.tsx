@@ -77,9 +77,9 @@ export function About() {
           </div>
 
           <p className="text-muted-foreground">
-            I'm always excited to take on new challenges, improve existing
-            systems, and bring ideas to life through code. Let’s build something
-            great together :)
+            I&apos;m always excited to take on new challenges, improve existing
+            systems, and bring ideas to life through code. Let&apos;s build
+            something great together :)
           </p>
         </div>
       </div>

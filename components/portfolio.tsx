@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import AddIcon from "@mui/icons-material/Add";
 import LaunchIcon from "@mui/icons-material/Launch";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
@@ -13,35 +12,48 @@ export function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
+      category: "blog",
+      title: "Personal Blog",
+      image: "/blog.png?height=300&width=400",
+      view: "https://dreamblog-mu.vercel.app",
+      repo: "https://github.com/morbidreams/nextjs-blog",
+      tags: ["nextjs", "shadcn", "mdx"],
+    },
+    {
+      id: 2,
       category: "library",
       title: "UI Kit",
       image: "/ui-kit.png?height=300&width=400",
       view: "https://morbidreams.github.io/ui-kit/",
       repo: "https://github.com/morbidreams/ui-kit",
+      tags: ["react", "storybook", "sass"],
     },
     {
-      id: 2,
+      id: 3,
       category: "game",
       title: "Jigsaw puzzle",
       image: "/jigsaw.png?height=300&width=400",
       view: "https://morbidreams.github.io/jigsaw/",
       repo: "https://github.com/morbidreams/jigsaw",
+      tags: ["react", "tailwind", "typescript"],
     },
     {
-      id: 3,
+      id: 4,
       category: "app",
       title: "Kanban App",
       image: "/todo.png?height=300&width=400",
       view: "https://kanban-app-one-zeta.vercel.app/",
       repo: "https://github.com/morbidreams/Nextjs-kanban-app/",
+      tags: ["nextjs", "zustand", "javascript"],
     },
     {
-      id: 4,
+      id: 5,
       category: "dashboard",
       title: "Management tool",
       image: "/rentals.png?height=300&width=400",
       view: "https://github.com/morbidreams/rental-management-api",
       repo: "https://github.com/morbidreams/rental-management-api",
+      tags: ["nextjs", "nestjs", "postgres"],
     },
   ];
 
@@ -51,7 +63,7 @@ export function Portfolio() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Portfolio</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            A collection of projects I’ve worked on
+            A collection of projects I&apos;ve worked on
           </p>
         </div>
 
@@ -72,7 +84,7 @@ export function Portfolio() {
                   <div className="flex space-x-4">
                     <Button
                       size="icon"
-                      className="bg-black text-white hover:bg-gray-900 rounded-full"
+                      className="bg-peach-100 text-black hover:bg-peach-200 rounded-full"
                     >
                       <Link href={item.view || "#"} target="_blank">
                         <VisibilityIcon />
@@ -80,7 +92,7 @@ export function Portfolio() {
                     </Button>
                     <Button
                       size="icon"
-                      className="bg-black text-white hover:bg-gray-900 rounded-full"
+                      className="bg-peach-100 text-black hover:bg-peach-200 rounded-full"
                       asChild
                     >
                       <Link href={item.repo || "#"} target="_blank">
@@ -92,7 +104,16 @@ export function Portfolio() {
               </div>
               <CardContent className="p-4">
                 <h3 className="font-semibold mb-2">{item.title}</h3>
-                <Badge variant="outline" className="capitalize">
+
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {item.tags?.map((tag) => (
+                    <span key={tag} className="text-xs text-muted-foreground">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+
+                <Badge variant="outline" className="capitalize text-peach-400">
                   {item.category}
                 </Badge>
               </CardContent>
