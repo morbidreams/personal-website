@@ -1,20 +1,17 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features a clean design working contact form, and mobile-first responsive layout.
+A modern, responsive portfolio website built with Next.js 15. Features a clean design working contact form, and mobile-first responsive layout.
 
 ## Technologies Used
-
-### Core Framework
-
 - **Next.js 15**
 - **TypeScript**
 - **Tailwind CSS**
+- **Shadcn/UI**
 - **Resend**
-- **Google Maps Embed** - Interactive map showing location
+- **Google Maps Embed**
 - **Server Actions**
-- **ESLint** - Code linting for consistent code quality
-- **PostCSS** - CSS processing and optimization
-- **Autoprefixer** - Automatic CSS vendor prefixing
+- **ESLint**
+- **Autoprefixer**
 
 ## Installation & Setup
 
@@ -25,8 +22,7 @@ A modern, responsive portfolio website built with Next.js 15, TypeScript, and Ta
 
 ### 2. Install Dependencies
 
-\`\`\`bash
-npm install
+`npm install`
 
 # or
 
@@ -34,16 +30,14 @@ yarn install
 
 # or
 
-pnpm install
-\`\`\`
+`pnpm install`
+
 
 ### 3. Environment Variables
 
-Create a \`.env.local\` file in the root directory:
+Create a `.env.local` file in the root directory:
 
-\`\`\`env
-RESEND_API_KEY=your_resend_api_key_here
-\`\`\`
+`RESEND_API_KEY=your_resend_api_key_here`
 
 To get your Resend API key:
 
@@ -54,14 +48,12 @@ To get your Resend API key:
 
 ### 4. Run the Development Server
 
-\`\`\`bash
-npm run dev
+`npm run dev`
 
 # or
 
-yarn dev
+`yarn dev`
 
 # or
 
-pnpm dev
-\`\`\`
+`pnpm dev`
