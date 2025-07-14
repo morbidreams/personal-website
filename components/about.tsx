@@ -50,9 +50,8 @@ export function About() {
           <p className="text-muted-foreground max-w-3xl mx-auto">
             3 things you need to know about my work:{" "}
             <b>Reliable Code. Sharp UI. Solid Backend.</b>
-            <br />I build fast, clean, and scalable web apps — from API to
-            interface. Experienced with React, Next.js, Node.js, and everything
-            in between.
+            <br />I build fast, clean, and scalable web apps. Experienced with
+            React, Next.js, Node.js, and everything in between.
           </p>
         </div>
 

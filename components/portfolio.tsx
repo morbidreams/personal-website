@@ -39,21 +39,30 @@ export function Portfolio() {
     },
     {
       id: 4,
-      category: "app",
-      title: "Kanban App",
-      image: "/todo.png?height=300&width=400",
-      view: "https://kanban-app-one-zeta.vercel.app/",
-      repo: "https://github.com/morbidreams/Nextjs-kanban-app/",
-      tags: ["nextjs", "zustand", "javascript"],
-    },
-    {
-      id: 5,
       category: "dashboard",
       title: "Management tool",
       image: "/rentals.png?height=300&width=400",
       view: "https://github.com/morbidreams/rental-management-api",
       repo: "https://github.com/morbidreams/rental-management-api",
       tags: ["nextjs", "nestjs", "postgres"],
+    },
+    {
+      id: 5,
+      category: "website",
+      title: "Timed quiz",
+      image: "/quiz.png?height=300&width=400",
+      view: "https://timed-quiz.vercel.app",
+      repo: "https://github.com/morbidreams/timed-quiz",
+      tags: ["nextjs", "bootstrap"],
+    },
+    {
+      id: 6,
+      category: "app",
+      title: "Kanban App",
+      image: "/todo.png?height=300&width=400",
+      view: "https://kanban-app-one-zeta.vercel.app/",
+      repo: "https://github.com/morbidreams/Nextjs-kanban-app/",
+      tags: ["nextjs", "zustand", "javascript"],
     },
   ];
 
@@ -63,7 +72,7 @@ export function Portfolio() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Portfolio</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            A collection of projects I&apos;ve worked on
+            A collection of projects I&apos;ve worked on.
           </p>
         </div>
 

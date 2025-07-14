@@ -24,7 +24,7 @@ export function Resume() {
   const experience = [
     {
       title: "Full-stack Developer",
-      period: "December 2023 - Present",
+      period: "Dec 2023 - Present",
       company: "SoumissionRenovation.ca - Canada (Remote)",
       responsibilities: [
         "Built new features, resolved bugs, and optimized UX handling several API-connected microservices.",
@@ -37,7 +37,7 @@ export function Resume() {
     },
     {
       title: "Full-stack Engineer Intern",
-      period: "February 2023 - August 2023",
+      period: "Feb 2023 - Aug 2023",
       company: "EY - Tunisia",
       responsibilities: [
         "Designed and developed EY PFEBOOK, a platform for students to explore and apply to EY's End-of-Study project offers through online assessments (personality tests, timed quizzes, coding problems).",
@@ -48,8 +48,8 @@ export function Resume() {
     },
     {
       title: "Web Developer",
-      period: "June 2022 - February 2023",
-      company: "KORSGY - Tunisia",
+      period: "Jun 2022 - Feb 2023",
+      company: "KORSGY - Ireland (Remote)",
       responsibilities: [
         "Built the company's website.",
         "Set up Stripe subscriptions and one-time payments.",
@@ -89,7 +89,7 @@ export function Resume() {
                   teams with a strong focus on code quality, scalability, and
                   user experience.
                 </p>
-                <div className="space-y-1 text-sm text-muted-foreground">
+                <div className="space-y-1 text-sm text-peach-400">
                   <p>Tunis, Tunisia</p>
                   <p>+216 22 056 550</p>
                   <p>eladebichi@gmail.com</p>
@@ -113,7 +113,7 @@ export function Resume() {
                       <Badge variant="secondary" className="mb-2">
                         {edu.period}
                       </Badge>
-                      <p className="text-sm text-muted-foreground italic mb-2">
+                      <p className="text-sm text-peach-400 italic mb-2">
                         {edu.institution}
                       </p>
                       <p className="text-sm text-muted-foreground">
@@ -152,7 +152,7 @@ export function Resume() {
                       <Badge variant="secondary" className="mb-2">
                         {exp.period}
                       </Badge>
-                      <p className="text-sm text-muted-foreground italic mb-4">
+                      <p className="text-sm text-peach-400 italic mb-4">
                         {exp.company}
                       </p>
                       <ul className="space-y-2 text-sm text-muted-foreground">
