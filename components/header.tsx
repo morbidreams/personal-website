@@ -15,6 +15,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
 import { ThemeToggle } from "@/components/theme-toggle";
+import Image from "next/image";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,13 @@ export function Header() {
       {/* Profile Section */}
       <div className="text-center mb-8">
         <Avatar className="w-32 h-32 mx-auto mb-4">
-          <AvatarImage src="/ela.jpg?height=128&width=128" alt="Ela Debichi" />
+          <Image
+            src="/ela.webp"
+            alt="Ela Debichi"
+            width={128}
+            height={128}
+            priority
+          />
           <AvatarFallback>ED</AvatarFallback>
         </Avatar>
         <h1 className="text-2xl font-bold mb-4">

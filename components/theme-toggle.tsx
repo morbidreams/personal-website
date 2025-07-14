@@ -15,7 +15,11 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <Button variant="outline" size="icon" className="bg-transparent">
+      <Button
+        variant="outline"
+        size="icon"
+        className="border-gray-300 bg-transparent"
+      >
         <LightModeIcon className="h-[1.2rem] w-[1.2rem]" />
         <span className="sr-only">Toggle theme</span>
       </Button>
@@ -27,7 +31,7 @@ export function ThemeToggle() {
       variant="outline"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="bg-transparent"
+      className="border-gray-300 bg-transparent"
     >
       {theme === "dark" ? (
         <DarkModeIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
