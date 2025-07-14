@@ -49,7 +49,9 @@ export function About() {
           <h2 className="text-4xl font-bold mb-4">Hi :)</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             3 things you need to know about my work:{" "}
-            <b>Reliable Code. Sharp UI. Solid Backend.</b>
+            <b className="text-primary">
+              Reliable Code. Sharp UI. Solid Backend.
+            </b>
             <br />I build fast, clean, and scalable web apps. Experienced with
             React, Next.js, Node.js, and everything in between.
           </p>
@@ -58,7 +60,7 @@ export function About() {
         <div className="space-y-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">Full-stack Developer</h3>
-            <p className="text-muted-foreground italic">
+            <p className="text-muted-foreground">
               I build user-friendly interfaces and solid backend systems. I care
               about collaboration, clarity, and building things that last.
             </p>

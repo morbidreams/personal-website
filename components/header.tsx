@@ -14,6 +14,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,13 +95,17 @@ export function Header() {
 
   return (
     <>
+      {/* Theme Toggle Button */}
+      <div className="fixed top-4 right-16 lg:right-4 z-50">
+        <ThemeToggle />
+      </div>
       {/* Mobile Navigation */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button
             variant="outline"
             size="icon"
-            className="fixed top-4 right-4 z-50 lg:hidden bg-white"
+            className="fixed top-4 right-4 z-50 lg:hidden"
           >
             <MenuIcon />
           </Button>

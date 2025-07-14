@@ -89,7 +89,7 @@ export function Resume() {
                   teams with a strong focus on code quality, scalability, and
                   user experience.
                 </p>
-                <div className="space-y-1 text-sm text-peach-400">
+                <div className="space-y-1 text-sm text-primary">
                   <p>Tunis, Tunisia</p>
                   <p>+216 22 056 550</p>
                   <p>eladebichi@gmail.com</p>
@@ -113,7 +113,7 @@ export function Resume() {
                       <Badge variant="secondary" className="mb-2">
                         {edu.period}
                       </Badge>
-                      <p className="text-sm text-peach-400 italic mb-2">
+                      <p className="text-sm text-primary italic mb-2">
                         {edu.institution}
                       </p>
                       <p className="text-sm text-muted-foreground">
@@ -152,7 +152,7 @@ export function Resume() {
                       <Badge variant="secondary" className="mb-2">
                         {exp.period}
                       </Badge>
-                      <p className="text-sm text-peach-400 italic mb-4">
+                      <p className="text-sm text-primary italic mb-4">
                         {exp.company}
                       </p>
                       <ul className="space-y-2 text-sm text-muted-foreground">
@@ -201,7 +201,7 @@ export function Resume() {
                       <Badge variant="secondary" className="mb-2">
                         {edu.period}
                       </Badge>
-                      <p className="text-sm text-muted-foreground italic mb-2">
+                      <p className="text-sm text-primary italic mb-2">
                         {edu.institution}
                       </p>
                       <p className="text-sm text-muted-foreground">

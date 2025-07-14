@@ -122,7 +122,7 @@ export function Portfolio() {
                   ))}
                 </div>
 
-                <Badge variant="outline" className="capitalize text-peach-400">
+                <Badge variant="outline" className="capitalize text-primary">
                   {item.category}
                 </Badge>
               </CardContent>
