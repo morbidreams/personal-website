@@ -24,11 +24,11 @@ A modern, responsive portfolio website built with Next.js 15. Features a clean d
 
 `npm install`
 
-# or
+or
 
 yarn install
 
-# or
+or
 
 `pnpm install`
 
@@ -50,10 +50,10 @@ To get your Resend API key:
 
 `npm run dev`
 
-# or
+or
 
 `yarn dev`
 
-# or
+or
 
 `pnpm dev`
