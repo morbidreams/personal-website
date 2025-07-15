@@ -56,7 +56,7 @@ export function Resume() {
         "Built RESTful APIs and tested all endpoints using Jest.",
         "Ensured the website is fully responsive by adopting a mobile-first approach to the design.",
         "Improved the website performance by reducing the number of HTTP requests, lazy-loading images.",
-        "Collaborated with the employer, the UI/UX designer and the technical writers on Feedback, and made the necessary adjustments that better capture the intended use cases.",
+        "Collaborated with the employer, UI/UX designer, and technical writers to gather feedback and implement adjustments to better align the product with intended use cases.",
       ],
     },
   ];

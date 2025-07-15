@@ -46,7 +46,12 @@ export function About() {
     <section id="about" className="py-20 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Hi :)</h2>
+          <h2 className="sm:text-4xl text-3xl font-bold mb-4">
+            <span className="block sm:hidden">
+              Hello there :) I&apos;m Ela.
+            </span>
+            <span className="hidden sm:block">Hi :)</span>
+          </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             3 things you need to know about my work:{" "}
             <b className="text-primary">
@@ -61,8 +66,11 @@ export function About() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Full-stack Developer</h3>
             <p className="text-muted-foreground">
-              I build user-friendly interfaces and solid backend systems. I care
-              about collaboration, clarity, and building things that last.
+              I build user-friendly interfaces and solid backend systems.
+              <br />I care about collaboration, clarity, and building things
+              that last. <br />
+              I&apos;m always excited to take on new challenges, improve
+              existing systems, and bring ideas to life through code.
             </p>
           </div>
 
@@ -76,12 +84,6 @@ export function About() {
               </div>
             ))}
           </div>
-
-          <p className="text-muted-foreground">
-            I&apos;m always excited to take on new challenges, improve existing
-            systems, and bring ideas to life through code. Let&apos;s build
-            something great together :)
-          </p>
         </div>
       </div>
     </section>

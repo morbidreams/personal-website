@@ -53,7 +53,7 @@ export function Skills() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Technical Skills</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            What I bring to the table
+            What I bring to the table.
           </p>
         </div>
 
