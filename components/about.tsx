@@ -47,10 +47,7 @@ export function About() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="sm:text-4xl text-3xl font-bold mb-4">
-            <span className="block sm:hidden">
-              Hello there :) I&apos;m Ela.
-            </span>
-            <span className="hidden sm:block">Hi :)</span>
+            Hello there :) I&apos;m Ela.
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             3 things you need to know about my work:{" "}
@@ -64,14 +61,22 @@ export function About() {
 
         <div className="space-y-8">
           <div>
-            <h3 className="text-2xl font-bold mb-3">A Full-stack Developer</h3>
-            <p className="text-muted-foreground">
+            <h3 className="text-2xl font-bold mb-3">
+              A Passionate web Developer
+            </h3>
+            <p className="text-muted-foreground text-sm leading-6">
               I build websites. I like when things work, look nice, and make
-              sense.
+              sense. <br />
+              My interest in web development started back in 2015 when I decided
+              to try creating web pages with just html and css for fun. Since
+              then, I&apos;ve been hooked on the idea of creating beautiful,
+              functional websites that people love to use. I&apos;ve worked on a
+              variety of projects, from small personal websites to large-scale
+              web applications.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 text-sm">
             {personalInfo.map((info, index) => (
               <div key={index} className="flex items-center space-x-3">
                 {info.icon}

@@ -131,7 +131,7 @@ export function Contact() {
           {/* Contact Form */}
           <Card>
             <CardHeader>
-              <CardTitle>Send Message</CardTitle>
+              <CardTitle>Message Me</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -195,7 +195,7 @@ export function Contact() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full"
+                  className="w-full bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>

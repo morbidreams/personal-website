@@ -82,17 +82,16 @@ export function Resume() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h4 className="text-xl font-bold mb-2">Ela Debichi</h4>
-                <p className="text-muted-foreground italic mb-4">
-                  I care about collaboration, clarity, and building things that
-                  last. I&apos;m always excited to take on new challenges, and
-                  bring ideas to life through code.
+                <p className="text-muted-foreground text-sm mb-4 leading-6">
+                  As a full-stack engineer, I enjoy bridging the gap between
+                  engineering and design, combining my technical knowledge with
+                  my keen eye for design to create a beautiful product. <br />
+                  My goal is to always build applications that are scalable and
+                  efficient while providing engaging, pixel-perfect user
+                  experiences. I&apos;m always excited to take on new
+                  challenges, and bring ideas to life one line of code at a
+                  time.
                 </p>
-                <div className="space-y-1 text-sm text-primary">
-                  <p>Tunis, Tunisia</p>
-                  <p>+216 22 056 550</p>
-                  <p>eladebichi@gmail.com</p>
-                </div>
               </CardContent>
             </Card>
 
