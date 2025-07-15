@@ -64,13 +64,10 @@ export function About() {
 
         <div className="space-y-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Full-stack Developer</h3>
+            <h3 className="text-2xl font-bold mb-3">A Full-stack Developer</h3>
             <p className="text-muted-foreground">
-              I build user-friendly interfaces and solid backend systems.
-              <br />I care about collaboration, clarity, and building things
-              that last. <br />
-              I&apos;m always excited to take on new challenges, improve
-              existing systems, and bring ideas to life through code.
+              I build websites. I like when things work, look nice, and make
+              sense.
             </p>
           </div>
 

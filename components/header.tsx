@@ -112,7 +112,7 @@ export function Header() {
           <Button
             variant="outline"
             size="icon"
-            className="fixed top-4 right-4 z-50 lg:hidden"
+            className="fixed top-4 right-4 z-50 border-gray-300 lg:hidden"
           >
             <MenuIcon />
           </Button>

@@ -84,10 +84,9 @@ export function Resume() {
               <CardContent>
                 <h4 className="text-xl font-bold mb-2">Ela Debichi</h4>
                 <p className="text-muted-foreground italic mb-4">
-                  Creative and reliable full stack developer with good UI skills
-                  and solid backend skills. Thrive in fast-paced, cross-cultural
-                  teams with a strong focus on code quality, scalability, and
-                  user experience.
+                  I care about collaboration, clarity, and building things that
+                  last. I&apos;m always excited to take on new challenges, and
+                  bring ideas to life through code.
                 </p>
                 <div className="space-y-1 text-sm text-primary">
                   <p>Tunis, Tunisia</p>
