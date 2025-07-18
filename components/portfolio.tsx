@@ -95,41 +95,38 @@ export function Portfolio() {
                     <Button
                       size="icon"
                       className="bg-peach-100 text-black hover:bg-peach-200 rounded-full"
-                      onClick={() =>
+                      onClick={() => {
                         event({
                           action: "click_view_link",
                           category: "Portfolio",
                           label: item.view,
-                        })
-                      }
+                        });
+                        window.open(
+                          item.view || "#",
+                          "_blank",
+                          "noopener,noreferrer"
+                        );
+                      }}
                     >
-                      <Link
-                        href={item.view || "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <VisibilityIcon />
-                      </Link>
+                      <VisibilityIcon />
                     </Button>
                     <Button
                       size="icon"
                       className="bg-peach-100 text-black hover:bg-peach-200 rounded-full"
-                      asChild
-                      onClick={() =>
+                      onClick={() => {
                         event({
                           action: "click_repo_link",
                           category: "Portfolio",
                           label: item.repo,
-                        })
-                      }
+                        });
+                        window.open(
+                          item.repo || "#",
+                          "_blank",
+                          "noopener,noreferrer"
+                        );
+                      }}
                     >
-                      <Link
-                        href={item.repo || "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <LaunchIcon />
-                      </Link>
+                      <LaunchIcon />
                     </Button>
                   </div>
                 </div>
