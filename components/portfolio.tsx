@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import LaunchIcon from "@mui/icons-material/Launch";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import { event } from "@/lib/gtag";
 
 export function Portfolio() {
   const portfolioItems = [
@@ -94,8 +95,19 @@ export function Portfolio() {
                     <Button
                       size="icon"
                       className="bg-peach-100 text-black hover:bg-peach-200 rounded-full"
+                      onClick={() =>
+                        event({
+                          action: "click_view_link",
+                          category: "Portfolio",
+                          label: item.view,
+                        })
+                      }
                     >
-                      <Link href={item.view || "#"} target="_blank">
+                      <Link
+                        href={item.view || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <VisibilityIcon />
                       </Link>
                     </Button>
@@ -103,8 +115,19 @@ export function Portfolio() {
                       size="icon"
                       className="bg-peach-100 text-black hover:bg-peach-200 rounded-full"
                       asChild
+                      onClick={() =>
+                        event({
+                          action: "click_repo_link",
+                          category: "Portfolio",
+                          label: item.repo,
+                        })
+                      }
                     >
-                      <Link href={item.repo || "#"} target="_blank">
+                      <Link
+                        href={item.repo || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <LaunchIcon />
                       </Link>
                     </Button>
