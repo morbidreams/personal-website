@@ -25,7 +25,7 @@ export function Portfolio() {
       category: "library",
       title: "UI Kit",
       image: "/ui-kit.png?height=300&width=400",
-      view: "https://morbidreams.github.io/ui-kit/",
+      view: "https://ela-ui-kit.vercel.app/?path=/story/carousel--base",
       repo: "https://github.com/morbidreams/ui-kit",
       tags: ["react", "storybook", "sass"],
     },
