@@ -51,7 +51,7 @@ export function Resume() {
       period: "Jun 2022 - Feb 2023",
       company: "KORSGY - Ireland (Remote)",
       responsibilities: [
-        "Built the company's website.",
+        "Developed the company’s new website and contributed frontend work to a VOD platform.",
         "Set up Stripe subscriptions and one-time payments.",
         "Built RESTful APIs and tested all endpoints using Jest.",
         "Ensured the website is fully responsive by adopting a mobile-first approach to the design.",
