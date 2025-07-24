@@ -62,7 +62,7 @@ export function About() {
         <div className="space-y-8">
           <div>
             <h3 className="text-2xl font-bold mb-3">
-              A Passionate web Developer
+              A Passionate Software Engineer
             </h3>
             <p className="text-muted-foreground text-sm leading-6">
               I build websites. I like when things work, look nice, and make
@@ -72,7 +72,10 @@ export function About() {
               then, I&apos;ve been hooked on the idea of creating beautiful,
               functional websites that people love to use. I&apos;ve worked on a
               variety of projects, from small personal websites to large-scale
-              web applications.
+              web applications. What keeps me going is the constant challenge:
+              solving problems, debugging the unexpected, and finding smart,
+              elegant solutions. <br />I genuinely enjoy figuring things out and
+              making the complex feel simple.
             </p>
           </div>
 
