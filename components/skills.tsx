@@ -15,7 +15,7 @@ export function Skills() {
     { name: "HTML/CSS", percentage: 95 },
     { name: "Next.js", percentage: 70 },
     { name: "Node.js", percentage: 70 },
-    { name: "NestJS", percentage: 50 },
+    { name: "NestJS", percentage: 65 },
     { name: "Express.js", percentage: 70 },
     { name: "Angular", percentage: 50 },
     { name: "Shadcn/UI", percentage: 60 },
@@ -37,7 +37,7 @@ export function Skills() {
           setAnimated(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (sectionRef.current) {

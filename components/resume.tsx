@@ -7,6 +7,29 @@ import { Separator } from "@/components/ui/separator";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import PersonIcon from "@mui/icons-material/Person";
+import Rocket from "@mui/icons-material/Rocket";
+
+// Turns any URL found inside a responsibility string into a clickable link that opens in a new tab.
+function linkify(text: string) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+
+  return parts.map((part, i) =>
+    urlRegex.test(part) ? (
+      <a
+        key={i}
+        href={part}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline hover:no-underline"
+      >
+        {part}
+      </a>
+    ) : (
+      <span key={i}>{part}</span>
+    ),
+  );
+}
 
 export function Resume() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -23,16 +46,30 @@ export function Resume() {
 
   const experience = [
     {
+      title: "Freelance Full-stack Engineer",
+      period: "Sep 2025 - Dec 2025",
+      company: "Rental Management Platform",
+      responsibilities: [
+        "Independently designed and built a full-stack rental management platform end-to-end (architecture, database, backend APIs, frontend), delivering a working MVP as the sole engineer.",
+        "Architected a PostgreSQL schema and modular NestJS backend following Clean Architecture principles, structured around tenant, property, and payment domains.",
+        "Integrated Stripe to handle secure rent payments, payment tracking, and transaction workflows for tenants and property owners through RESTful APIs.",
+        "Translated wireframes into a responsive Next.js/Tailwind/Chakra UI frontend, closely matching UX specifications with minimal revision cycles.",
+      ],
+    },
+    {
       title: "Full-stack Developer",
-      period: "Dec 2023 - Present",
+      period: "Dec 2023 - Aug 2025",
       company: "SoumissionRenovation.ca - Canada (Remote)",
       responsibilities: [
-        "Built new features, resolved bugs, and optimized UX handling several API-connected microservices.",
-        "Collaborated with the team to build and maintain a UI component library based on atomic design.",
-        "Opened pull requests and reviewed code with attention to clarity, test coverage, and edge cases.",
-        "Wrote unit tests and end-to-end tests and enforced code standards using ESLint and SonarQube.",
-        "Improved address validation accuracy from 80% to 95% by enhancing a Google Maps API form component for user-submitted addresses.",
-        "Collaborated closely with developers, product managers and UI/UX designers in an Agile environment, exchanging ideas and feedback.",
+        "Check the website : https://renoquotes.com",
+        "Shipped features and resolved bugs across 8 API-connected microservices (Next.js/NestJS) contributing to a production platform used by real estate/renovation clients.",
+        "Built and maintained a Storybook UI component library using atomic design principles, standardizing reusable components across the frontend codebase.",
+        "Wrote and optimized complex SQL queries across MySQL and PostgreSQL for high-performance data retrieval, targeting slow-running queries flagged in performance reviews.",
+        "Documented RESTful APIs with OpenAPI, maintaining clear and consistent API specifications for frontend integration.",
+        "Opened focused, single-purpose pull requests and reviewed 40+ teammate PRs for clarity, test coverage, and edge cases before merge.",
+        "Wrote unit tests and end-to-end tests (Jest/Cypress) and enforced code standards and health using ESLint and SonarQube in CI pipelines, catching regressions before they reached QA.",
+        "Improved data quality and consistency by optimizing form data retrieval and validation logic, reducing incorrect or incomplete submissions by ~30%.",
+        "Worked in an Agile team (Kanban/Scrum) alongside engineers, PMs, QA, and designers, incorporating feedback into iterative releases.",
       ],
     },
     {
@@ -41,9 +78,9 @@ export function Resume() {
       company: "EY - Tunisia",
       responsibilities: [
         "Designed and developed EY PFEBOOK, a platform for students to explore and apply to EY's End-of-Study project offers through online assessments (personality tests, timed quizzes, coding problems).",
-        "Built RESTful APIs and full-stack features for both user and admin interfaces.",
         "Integrated a recommendation system to assist HR in identifying top candidates.",
-        "Secured the platform with JWT, encrypted passwords, API rate limiting, and other protocols.",
+        "Integrated a recommendation system to assist HR in identifying top candidates.",
+        "Secured the platform with JWT authentication, encrypted passwords, and API rate limiting, applying GDPR-aligned data handling practices to protect student and candidate personal data.",
       ],
     },
     {
@@ -51,12 +88,12 @@ export function Resume() {
       period: "Jun 2022 - Feb 2023",
       company: "KORSGY - Ireland (Remote)",
       responsibilities: [
-        "Developed the company’s new website and contributed frontend work to a VOD platform.",
-        "Set up Stripe subscriptions and one-time payments.",
-        "Built RESTful APIs and tested all endpoints using Jest.",
+        "Developed the company’s new website (frontend, backend, and REST APIs) and a production e-commerce platform with documented APIs for core commerce workflows.",
+        "Integrated Stripe for secure payments, checkout sessions, payment processing, and transaction validation.",
+        "Collaborated with designers to translate wireframes into responsive, accessible interfaces and improve user experience.",
         "Ensured the website is fully responsive by adopting a mobile-first approach to the design.",
         "Improved the website performance by reducing the number of HTTP requests, lazy-loading images.",
-        "Collaborated with the employer, UI/UX designer, and technical writers to gather feedback and implement adjustments to better align the product with intended use cases.",
+        "Participated in feature planning, code reviews, debugging, and Agile development to deliver scalable solutions.",
       ],
     },
   ];
@@ -83,14 +120,17 @@ export function Resume() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-4 leading-6">
-                  As a full-stack engineer, I enjoy bridging the gap between
-                  engineering and design, combining my technical knowledge with
-                  my keen eye for design to create a beautiful product. <br />
-                  My goal is to always build applications that are scalable and
-                  efficient while providing engaging, pixel-perfect user
-                  experiences. I&apos;m always excited to take on new
-                  challenges, and bring ideas to life one line of code at a
-                  time.
+                  <i>
+                    <b>
+                      Full-stack engineer (3+ years) specializing in
+                      React/Next.js and Node/NestJS
+                    </b>
+                  </i>
+                  , with production experience shipping payment systems (Stripe)
+                  and microservice-based platforms for remote clients in Canada
+                  and Ireland. Independently designed and built a full-stack
+                  rental management platform end-to-end (architecture, database,
+                  backend APIs, and frontend)
                 </p>
               </CardContent>
             </Card>
@@ -125,6 +165,28 @@ export function Resume() {
                 </CardContent>
               </Card>
             </div>
+
+            {/* Goals card */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Rocket className="w-5 h-5" />
+                  Goal
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm mb-4 leading-6">
+                  As a full-stack engineer, I enjoy bridging the gap between
+                  engineering and design, combining my technical knowledge with
+                  my keen eye for design to create a beautiful product. <br />
+                  My goal is to always build applications that are scalable and
+                  efficient while providing engaging, pixel-perfect user
+                  experiences. I&apos;m always excited to take on new
+                  challenges, and bring ideas to life one line of code at a
+                  time.
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Right column: Professional Experience + Education on mobile */}
@@ -160,7 +222,7 @@ export function Resume() {
                             className="flex items-start gap-2"
                           >
                             <span className="w-1 h-1 bg-primary rounded-full mt-2 flex-shrink-0" />
-                            {resp}
+                            <span>{linkify(resp)}</span>
                           </li>
                         ))}
                       </ul>
