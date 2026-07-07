@@ -74,6 +74,16 @@
     @apply bg-background text-foreground;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+    cursor:
+      url("/cursors/junimo_cursor.png") 0 0,
+      auto;
+  }
+  a,
+  button,
+  [role="button"] {
+    cursor:
+      url("/cursors/stardrop_cursor.png") 8 8,
+      pointer;
   }
 }
 
