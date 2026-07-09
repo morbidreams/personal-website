@@ -86,7 +86,7 @@
           hsl(var(--background) / 0.7),
           hsl(var(--background) / 0.7)
         ),
-        url("/bg/bg-light.jpg");
+        url("/bg/bg-light.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -99,7 +99,7 @@
           hsl(var(--background) / 0.7),
           hsl(var(--background) / 0.7)
         ),
-        url("/bg/bg-dark.png");
+        url("/bg/bg-dark.webp");
     }
   }
 
