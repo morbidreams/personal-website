@@ -38,9 +38,9 @@ export function Resume() {
     {
       degree: "Engineering Degree in Computer Science",
       period: "2018 - 2023",
-      institution: "Esprit, Tunis",
+      institution: "Esprit, Tunis (EUR-ACE)",
       description:
-        "Studied computer science and specialized in web and Internet technologies, worked with various teams on different academic projects and did a summer internship as a web developer at a bank agency (BTS).",
+        "Graduated with Highest Honors. Specialized in web and Internet technologies through various academic team projects and a summer internship as a Web Developer at BTS BANK.",
     },
   ];
 
@@ -109,7 +109,7 @@ export function Resume() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left column: Summary + Education on desktop */}
+          {/* Left column: Summary + Goals +Education on desktop */}
           <div className="space-y-8">
             <Card>
               <CardHeader>
@@ -120,17 +120,35 @@ export function Resume() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-4 leading-6">
-                  <i>
-                    <b>
-                      Full-stack engineer (3+ years) specializing in
-                      React/Next.js and Node/NestJS
-                    </b>
-                  </i>
-                  , with production experience shipping payment systems (Stripe)
-                  and microservice-based platforms for remote clients in Canada
-                  and Ireland. Independently designed and built a full-stack
-                  rental management platform end-to-end (architecture, database,
-                  backend APIs, and frontend)
+                  Self-disciplined Full-stack engineer (3+ years) with a strong
+                  sense of design and an end-to-end ownership mindset.
+                  Specialized in{" "}
+                  <b>
+                    <i>React/Next.js and Node/NestJS</i>
+                  </b>
+                  , with remote experience delivering for clients in Canada, US,
+                  Ireland.
+                </p>
+              </CardContent>
+            </Card>
+            {/* Goals card */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Rocket className="w-5 h-5" />
+                  Goals
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm mb-4 leading-6">
+                  As a full-stack engineer, Small interactions matter to me as
+                  much as the architecture underneath them. A spinner that feels
+                  cheap bothers me the same way a slow query does. I care about
+                  the pixels as much as the logic underneath them, and I want
+                  that logic to read clean, not like someone unraveled a ball of
+                  yarn and called it a function. Sometimes I'll lean on AI when
+                  I'm stuck or want a second opinion, kind of like a mentor on
+                  call.
                 </p>
               </CardContent>
             </Card>
@@ -165,28 +183,6 @@ export function Resume() {
                 </CardContent>
               </Card>
             </div>
-
-            {/* Goals card */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Rocket className="w-5 h-5" />
-                  Goal
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm mb-4 leading-6">
-                  As a full-stack engineer, I enjoy bridging the gap between
-                  engineering and design, combining my technical knowledge with
-                  my keen eye for design to create a beautiful product. <br />
-                  My goal is to always build applications that are scalable and
-                  efficient while providing engaging, pixel-perfect user
-                  experiences. I&apos;m always excited to take on new
-                  challenges, and bring ideas to life one line of code at a
-                  time.
-                </p>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Right column: Professional Experience + Education on mobile */}

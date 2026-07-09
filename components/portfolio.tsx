@@ -13,15 +13,6 @@ export function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      category: "blog",
-      title: "Personal Blog",
-      image: "/blog.png?height=300&width=400",
-      view: "https://dreamblog-mu.vercel.app",
-      repo: "https://github.com/morbidreams/nextjs-blog",
-      tags: ["nextjs", "shadcn", "mdx"],
-    },
-    {
-      id: 2,
       category: "library",
       title: "UI Kit",
       image: "/ui-kit.png?height=300&width=400",
@@ -30,16 +21,7 @@ export function Portfolio() {
       tags: ["react", "storybook", "sass"],
     },
     {
-      id: 3,
-      category: "game",
-      title: "Jigsaw puzzle",
-      image: "/jigsaw.png?height=300&width=400",
-      view: "https://morbidreams.github.io/jigsaw/",
-      repo: "https://github.com/morbidreams/jigsaw",
-      tags: ["react", "tailwind", "typescript"],
-    },
-    {
-      id: 4,
+      id: 2,
       category: "dashboard",
       title: "Management tool",
       image: "/rentals.png?height=300&width=400",
@@ -47,6 +29,25 @@ export function Portfolio() {
       repo: "https://github.com/morbidreams/rental-management-api",
       tags: ["nextjs", "nestjs", "postgres"],
     },
+    {
+      id: 3,
+      category: "blog",
+      title: "Personal Blog",
+      image: "/blog.png?height=300&width=400",
+      view: "https://dreamblog-mu.vercel.app",
+      repo: "https://github.com/morbidreams/nextjs-blog",
+      tags: ["nextjs", "shadcn", "mdx"],
+    },
+    {
+      id: 4,
+      category: "game",
+      title: "Jigsaw puzzle",
+      image: "/jigsaw.png?height=300&width=400",
+      view: "https://morbidreams.github.io/jigsaw/",
+      repo: "https://github.com/morbidreams/jigsaw",
+      tags: ["react", "tailwind", "typescript"],
+    },
+
     {
       id: 5,
       category: "website",
@@ -64,6 +65,15 @@ export function Portfolio() {
       view: "https://kanban-app-one-zeta.vercel.app/",
       repo: "https://github.com/morbidreams/Nextjs-kanban-app/",
       tags: ["nextjs", "zustand", "javascript"],
+    },
+    {
+      id: 7,
+      category: "In progress",
+      title: "A2B – Public Transit Route Planner",
+      image: "/in-progress.jpg?height=300&width=400",
+      view: "#",
+      repo: "#",
+      tags: ["nextjs", "nestjs", "postgis", "leaflet", "opentripplanner"],
     },
   ];
 
@@ -104,7 +114,7 @@ export function Portfolio() {
                         window.open(
                           item.view || "#",
                           "_blank",
-                          "noopener,noreferrer"
+                          "noopener,noreferrer",
                         );
                       }}
                     >
@@ -122,7 +132,7 @@ export function Portfolio() {
                         window.open(
                           item.repo || "#",
                           "_blank",
-                          "noopener,noreferrer"
+                          "noopener,noreferrer",
                         );
                       }}
                     >

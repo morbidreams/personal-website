@@ -123,7 +123,7 @@ export function Header() {
       </Sheet>
 
       {/* Desktop Sidebar */}
-      <header className="fixed top-0 left-0 h-full w-80 hidden lg:block border-r bg-card">
+      <header className="fixed top-0 left-0 h-full w-60 hidden lg:block border-r bg-card">
         <SidebarContent />
       </header>
     </>

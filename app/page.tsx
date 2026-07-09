@@ -9,10 +9,10 @@ import { GoogleAnalytics } from "@/components/ga";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <GoogleAnalytics />
       <Header />
-      <main className="lg:ml-80">
+      <main className="lg:ml-60">
         <About />
         <Skills />
         <Resume />
