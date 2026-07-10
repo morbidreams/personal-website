@@ -6,11 +6,13 @@ import { Portfolio } from "@/components/portfolio";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { GoogleAnalytics } from "@/components/ga";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <GoogleAnalytics />
+      <Analytics />
       <Header />
       <main className="lg:ml-60">
         <About />
