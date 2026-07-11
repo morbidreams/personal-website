@@ -13,6 +13,15 @@ export function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
+      category: "script",
+      title: "Game Deals Scraper",
+      image: "/game-deals-scraper.png?height=300&width=400",
+      view: "https://github.com/morbidreams/game-deals-scraper",
+      repo: "https://github.com/morbidreams/game-deals-scraper",
+      tags: ["python", "flask", "html", "beautifulsoup"],
+    },
+    {
+      id: 2,
       category: "library",
       title: "UI Kit",
       image: "/ui-kit.png?height=300&width=400",
@@ -21,7 +30,7 @@ export function Portfolio() {
       tags: ["react", "storybook", "sass"],
     },
     {
-      id: 2,
+      id: 3,
       category: "dashboard",
       title: "Management tool",
       image: "/rentals.png?height=300&width=400",
@@ -30,7 +39,7 @@ export function Portfolio() {
       tags: ["nextjs", "nestjs", "postgres"],
     },
     {
-      id: 3,
+      id: 4,
       category: "blog",
       title: "Personal Blog",
       image: "/blog.png?height=300&width=400",
@@ -39,7 +48,7 @@ export function Portfolio() {
       tags: ["nextjs", "shadcn", "mdx"],
     },
     {
-      id: 4,
+      id: 5,
       category: "game",
       title: "Jigsaw puzzle",
       image: "/jigsaw.png?height=300&width=400",
@@ -47,9 +56,8 @@ export function Portfolio() {
       repo: "https://github.com/morbidreams/jigsaw",
       tags: ["react", "tailwind", "typescript"],
     },
-
     {
-      id: 5,
+      id: 6,
       category: "website",
       title: "Timed quiz",
       image: "/quiz.png?height=300&width=400",
@@ -58,7 +66,7 @@ export function Portfolio() {
       tags: ["nextjs", "bootstrap"],
     },
     {
-      id: 6,
+      id: 7,
       category: "app",
       title: "Kanban App",
       image: "/todo.png?height=300&width=400",
@@ -67,7 +75,7 @@ export function Portfolio() {
       tags: ["nextjs", "zustand", "javascript"],
     },
     {
-      id: 7,
+      id: 8,
       category: "In progress",
       title: "A2B – Public Transit Route Planner",
       image: "/in-progress.jpg?height=300&width=400",
