@@ -1,11 +1,8 @@
-import CakeIcon from "@mui/icons-material/Cake";
-import LanguageIcon from "@mui/icons-material/Language";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
-import WorkIcon from "@mui/icons-material/Work";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 
 export function About() {

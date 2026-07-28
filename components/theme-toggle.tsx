@@ -1,9 +1,9 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { PxlKitIcon } from "@pxlkit/core";
+import { Sun } from "@pxlkit/weather";
+import { Moon } from "@pxlkit/weather";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
@@ -15,30 +15,24 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <Button
-        variant="outline"
-        size="icon"
-        className="border-gray-300 bg-white"
-      >
-        <LightModeIcon className="h-[1.2rem] w-[1.2rem]" />
+      <a className="border-gray-300 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none">
+        <PxlKitIcon icon={Sun} size={48} />
         <span className="sr-only">Toggle theme</span>
-      </Button>
+      </a>
     );
   }
 
   return (
-    <Button
-      variant="outline"
-      size="icon"
+    <a
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="border-gray-300"
+      className="border-gray-300 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
     >
       {theme === "dark" ? (
-        <DarkModeIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+        <PxlKitIcon icon={Moon} size={48} />
       ) : (
-        <LightModeIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+        <PxlKitIcon icon={Sun} size={48} />
       )}
       <span className="sr-only">Toggle theme</span>
-    </Button>
+    </a>
   );
 }

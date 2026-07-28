@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import MenuIcon from "@mui/icons-material/Menu";
 import PersonIcon from "@mui/icons-material/Person";
@@ -21,10 +21,26 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "#about", icon: PersonIcon, label: "About" },
-    { href: "#resume", icon: DescriptionIcon, label: "Resume" },
-    { href: "#portfolio", icon: WorkIcon, label: "Portfolio" },
-    { href: "#contact", icon: EmailIcon, label: "Contact" },
+    {
+      href: "#about",
+      icon: <PersonIcon className="text-primary" />,
+      label: "About",
+    },
+    {
+      href: "#resume",
+      icon: <DescriptionIcon className="text-primary" />,
+      label: "Resume",
+    },
+    {
+      href: "#portfolio",
+      icon: <WorkIcon className="text-primary" />,
+      label: "Portfolio",
+    },
+    {
+      href: "#contact",
+      icon: <EmailIcon className="text-primary" />,
+      label: "Contact",
+    },
   ];
 
   const SidebarContent = () => (
@@ -89,7 +105,7 @@ export function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 <Link href={item.href} className="flex items-center space-x-3">
-                  <item.icon className="w-5 h-5" />
+                  {item.icon}
                   <span>{item.label}</span>
                 </Link>
               </Button>
