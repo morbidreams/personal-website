@@ -13,15 +13,6 @@ export function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      category: "app",
-      title: "Chill.fm – Vinyl Music Player",
-      image: "/portfolio/chillfm.png?height=300&width=400",
-      view: "https://morbidreams.github.io/chill.fm",
-      repo: "https://github.com/morbidreams/chill.fm",
-      tags: ["react", "typescipt", "tailwindcss"],
-    },
-    {
-      id: 2,
       category: "script",
       title: "Game Deals Scraper",
       image: "/portfolio/game-deals-scraper.png?height=300&width=400",
@@ -30,7 +21,7 @@ export function Portfolio() {
       tags: ["python", "flask", "html", "beautifulsoup"],
     },
     {
-      id: 3,
+      id: 2,
       category: "library",
       title: "UI Kit",
       image: "/portfolio/ui-kit.png?height=300&width=400",
@@ -39,7 +30,25 @@ export function Portfolio() {
       tags: ["react", "storybook", "sass"],
     },
     {
+      id: 3,
+      category: "app",
+      title: "CramBloom – Study Tracker",
+      image: "/portfolio/crambloom.png?height=300&width=400",
+      view: "https://crambloom.vercel.app",
+      repo: "https://github.com/morbidreams/study-trucker",
+      tags: ["Next", "typescipt", "shadcn"],
+    },
+    {
       id: 4,
+      category: "app",
+      title: "Chill.fm – Vinyl Music Player",
+      image: "/portfolio/chillfm.png?height=300&width=400",
+      view: "https://morbidreams.github.io/chill.fm",
+      repo: "https://github.com/morbidreams/chill.fm",
+      tags: ["react", "typescipt", "tailwindcss"],
+    },
+    {
+      id: 5,
       category: "dashboard",
       title: "Management tool",
       image: "/portfolio/rentals.png?height=300&width=400",
@@ -48,7 +57,7 @@ export function Portfolio() {
       tags: ["nextjs", "nestjs", "postgres"],
     },
     {
-      id: 5,
+      id: 6,
       category: "blog",
       title: "Personal Blog",
       image: "/portfolio/blog.png?height=300&width=400",
@@ -57,7 +66,7 @@ export function Portfolio() {
       tags: ["nextjs", "shadcn", "mdx"],
     },
     {
-      id: 6,
+      id: 7,
       category: "game",
       title: "Jigsaw puzzle",
       image: "/portfolio/jigsaw.png?height=300&width=400",
@@ -66,7 +75,7 @@ export function Portfolio() {
       tags: ["react", "tailwind", "typescript"],
     },
     {
-      id: 7,
+      id: 8,
       category: "website",
       title: "Timed quiz",
       image: "/portfolio/quiz.png?height=300&width=400",
@@ -75,7 +84,7 @@ export function Portfolio() {
       tags: ["nextjs", "bootstrap"],
     },
     {
-      id: 8,
+      id: 9,
       category: "app",
       title: "Kanban App",
       image: "/portfolio/todo.png?height=300&width=400",
@@ -84,7 +93,7 @@ export function Portfolio() {
       tags: ["nextjs", "zustand", "javascript"],
     },
     {
-      id: 9,
+      id: 10,
       category: "In progress",
       title: "A2B – Public Transit Route Planner",
       image: "/portfolio/in-progress.jpg?height=300&width=400",

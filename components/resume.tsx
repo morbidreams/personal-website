@@ -47,7 +47,7 @@ export function Resume() {
   const experience = [
     {
       title: "Freelance Full-stack Engineer",
-      period: "Sep 2025 - Dec 2025",
+      period: "Jan 2025 - Present",
       company: "Rental Management Platform",
       responsibilities: [
         "Independently designed and built a full-stack rental management platform end-to-end (architecture, database, backend APIs, frontend), delivering a working MVP as the sole engineer.",
@@ -58,7 +58,7 @@ export function Resume() {
     },
     {
       title: "Full-stack Developer",
-      period: "Dec 2023 - Aug 2025",
+      period: "Dec 2023 - Dec 2025",
       company: "SoumissionRenovation.ca - Canada (Remote)",
       responsibilities: [
         "Check the website : https://renoquotes.com",
