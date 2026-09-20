@@ -47,7 +47,7 @@ export function Resume() {
   const experience = [
     {
       title: "Freelance Full-stack Engineer",
-      period: "Jan 2025 - Present",
+      period: "Jan 2026 - Present",
       company: "Rental Management Platform",
       responsibilities: [
         "Independently designed and built a full-stack rental management platform end-to-end (architecture, database, backend APIs, frontend), delivering a working MVP as the sole engineer.",
